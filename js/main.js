@@ -6,7 +6,7 @@ $(document).ready(function() {
         $loader = $preloader.find('div');
         $loader.fadeOut();
         $preloader.delay(350).fadeOut('slow');
-    },3000)
+    },1500)
     
   });
 
