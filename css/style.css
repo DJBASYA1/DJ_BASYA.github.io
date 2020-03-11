@@ -563,85 +563,160 @@ p {
 .documentation {
   margin-bottom: 100px;
 }
-.resume-info {
-  padding-top: 100px;
-  text-align: center;
+.documentation-wrap {
   width: 100%;
-  height: 100vh;
-  margin: auto;
   background-color: rgba(0, 0, 0, 0.397);
   border-radius: 10px;
-}
-.resume-info-title {
-  font-size: 29px;
-  color: #fff;
-  font-family: "Source Sans Pro";
-}
-.resume-wrap {
+  padding: 40px 15px;
   display: flex;
   justify-content: space-between;
+}
+.documentation-short {
   width: 100%;
-  align-items: center;
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
-.left-resume {
-  width: 100%;
-  height: 100%;
+.documentation-short .short-title h4 {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Exo 2";
+  text-transform: uppercase;
+  text-align: center;
 }
-.left-resume img {
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
-}
-.right-resume {
-  width: 100%;
-  text-align: justify;
-}
-.title-box {
-  font-family: "Source Sans Pro";
-  font-size: 26px;
+.documentation-short h3 {
   color: deepskyblue;
+  font-size: 28px;
+  font-family: "Exo 2";
 }
-.title-box span {
-  position: relative;
+.documentation-short p {
   color: #fff;
-}
-.title-box span::before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0%;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.424);
-  padding: 50px;
-}
-.myButton {
-  background-color: #ffffff;
-  border-radius: 18px;
-  border: 10px solid rgba(0, 0, 0, 0.842);
-  display: inline-block;
-  cursor: pointer;
+  font-size: 18px;
   font-family: "Source Sans Pro";
-  color: #000;
-  font-size: 24px;
-  padding: 11px 30px;
-  text-decoration: none;
+}
+.documentation-short p span {
+  color: red;
   font-weight: bold;
-  transition: 0.5s;
 }
-.myButton:hover {
-  background-color: rgba(0, 0, 0, 0.397);
-  border: 10px solid deepskyblue;
+.documentation-short .border-top {
+  width: 30%;
+  height: 1px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: #fff;
+}
+.documentation-short .border-bottom {
+  width: 30%;
+  height: 1px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: #fff;
+}
+.separater {
+  height: 600px;
+  width: 5px;
+  background: deepskyblue;
+}
+.documentation-download {
+  width: 100%;
+}
+.documentation-download .short-title h4 {
+  text-align: center;
   color: #fff;
+  font-size: 30px;
+  font-family: "Exo 2";
+  text-transform: uppercase;
 }
-.myButton:active {
-  position: relative;
-  top: 1px;
+.documentation-download .short-title .resume_btn {
+  display: flex;
+  justify-content: center;
+}
+/* btn-settings */
+.btn-1f {
+	overflow: hidden;
 }
 
+.btn-1f:after {
+	width: 101%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+  background: deepskyblue;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: 20px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 60px;
+	display: inline-block;
+	margin: 50px 0 0 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn-1 {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-family: "Exo 2";
+	color: #000;
+}
+
+.btn-1f:hover,
+.btn-1f:active {
+  color: #fff;
+  border: 1px solid black;
+}
+
+.btn-1f:hover:after {
+  height: 100%;
+  width: 100%;
+	opacity: 1;
+}
+
+.btn-1f:active:after {
+	height: 130%;
+	opacity: 1;
+}
+/* end btn-settings */
 /* end section documentation */
 
 /* section contacts */
@@ -870,8 +945,9 @@ p {
 }
 .footer-wrap p {
   font-family: "Exo 2";
-  color: #fff;
+  color: deepskyblue;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 .footer-socials {
   display: flex;
@@ -880,6 +956,8 @@ p {
   font-size: 20px;
 }
 .footer-socials span {
-  /* font-family: 'Source Sans Pro'; */
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /* end footer */
+
