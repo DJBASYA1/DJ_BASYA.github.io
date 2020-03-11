@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+  $(window).on('load', function () {
+    setTimeout(function() {
+      $preloader = $('#load'),
+        $loader = $preloader.find('div');
+        $loader.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    },3000)
+    
+  });
+
   $('a[href^="#"').click(function(){
     var target = $(this).attr('href');
     $('html, body').animate({
