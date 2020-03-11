@@ -16,19 +16,21 @@
 <body>
     <div class="bg-img"></div>
     <div class="smoke"></div>
+    <div class="btn-up" id="toTop">
+        <i class="fad fa-arrow-alt-square-up" style="--fa-primary-color: white;"></i>
+    </div>
 
-    <header class="header ">
+    <header class="header">
         <div class="wrapper">
             <nav class="navigation">
                 <div class="logo-padding wow slideInLeft" data-wow-duration="1s">
                     <a href="#!" class="logo wow slideInRight" data-wow-delay="1s">DJ_BASYA</a>
                 </div>
                 <div class="nav-links wow slideInDown" data-wow-delay="0.5s">
-                    <a href="#!" class="nav-links-unchor wow fadeInDown" data-wow-delay="1.5s">навыки</a>
-                    <a href="#!" class="nav-links-unchor wow fadeInUp" data-wow-delay="2s">документация</a>
-                    <a href="#!" class="nav-links-unchor wow fadeInDown" data-wow-delay="2.5s">портфолио</a>
-                    <a href="#!" class="nav-links-unchor nav-text nav-middle wow fadeInUp" data-wow-delay="3s" data-text="контакты">контакты</a>
-                    <a href="#!" class="nav-links-unchor wow fadeInDown" data-wow-delay="3.5s">образование</a>
+                    <a href="#skills" class="nav-links-unchor wow fadeInDown" data-wow-delay="1.5s">навыки</a>
+                    <a href="#documentation" class="nav-links-unchor wow fadeInUp" data-wow-delay="2s">документация</a>
+                    <a href="#portfolio" class="nav-links-unchor wow fadeInDown" data-wow-delay="2.5s">портфолио</a>
+                    <a href="#contacts" class="nav-links-unchor nav-text nav-middle wow fadeInUp" data-wow-delay="3s" data-text="контакты">контакты</a>
                     <a href="#!" class="menu-btn"><span></span></a>
                 </div>
             </nav>
@@ -48,7 +50,7 @@
         </div>
     </header>
 
-    <section class="section skills ">
+    <section class="section skills" id="skills">
         <h3 class="text-center wow slideInLeft">Мои навыки</h3>
         <div class="skillbar-wrap wow fadeInRight">
             <div class="skillbar" data-percent="85%">
@@ -84,7 +86,7 @@
         </div>
     </section>
 
-    <section class="section documentation ">
+    <section class="section documentation" id="documentation">
         <h3 class="text-center wow slideInRight" data-wow-delay="1s">Документация</h3>
         <div class="resume-info wow slideInLeft" data-wow-delay="1.5s">
             <h3 class="resume-info-title wow slideInLeft" data-wow-delay="2s">Тут вы можете посмотреть моё резюме</h3>
@@ -100,10 +102,10 @@
         </div>
     </section>
 
-    <section class="section portfolio">
+    <section class="section portfolio" id="portfolio">
         <h3 class="text-center wow slideInLeft">Портфолио</h3>
-        <div class="portfolio-wrapp">
-            <div class="portfolio-box">
+        <div class="portfolio-wrapp wow fadeInRight" data-wow-delay="1s">
+            <div class="portfolio-box wow fadeInUp" data-wow-delay="2s">
                 <img src="img/portfolio/backone.jpg" alt="">
                 <div class="portfolioBox__content">
                     <h2 class="content-title">BackOne</h2>
@@ -112,7 +114,7 @@
                     </button>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box wow fadeInDown" data-wow-delay="2.5s">
                 <img src="img/portfolio/golden.jpg" alt="">
                 <div class="portfolioBox__content">
                     <h2 class="content-title">Golden</h2>
@@ -121,7 +123,7 @@
                     </button>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box wow fadeInUp" data-wow-delay="3s">
                 <img src="img/portfolio/harley.jpg" alt="">
                 <div class="portfolioBox__content">
                     <h2 class="content-title">Harley</h2>
@@ -130,7 +132,7 @@
                     </button>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box wow fadeInDown" data-wow-delay="3.5s">
                 <img src="img/portfolio/sarajevo.jpg" alt="">
                 <div class="portfolioBox__content">
                     <h2 class="content-title">Sarajevo</h2>
@@ -139,7 +141,7 @@
                     </button>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box wow fadeInUp" data-wow-delay="4s">
                 <img src="img/portfolio/webdev.jpg" alt="">
                 <div class="portfolioBox__content">
                     <h2 class="content-title">webdev</h2>
@@ -151,7 +153,7 @@
         </div>
     </section>
 
-    <section class="section contacts ">
+    <section class="section contacts" id="contacts">
         <h3 class="text-center wow slideInLeft">Контакты</h3>
         <div class="contact-wrap wow slideInRight" data-wow-delay="1s">
             <div class="contacts-form wow slideInLeft" data-wow-delay="2s">
@@ -187,6 +189,17 @@
             </div>
         </div>
     </section>
+
+    <footer class="section footer">
+        <div class="footer-wrap wow fadeInUp">
+            <p>Made with</p>
+            <div class="footer-socials">
+                <i class="fad fa-heart fa-lg"></i>
+                <span>&</span>
+                <i class="fad fa-fire-extinguisher fa-lg fa-spin"></i>
+            </div>
+        </div>
+    </footer>
 
     
 
