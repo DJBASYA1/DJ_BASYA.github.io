@@ -30,7 +30,7 @@ body {
   user-select: none;
   cursor: default;
   z-index: 10;
-  display: flex;
+  display: flex; /*flex*/
   justify-content: center;
   align-items: center;
 }
@@ -201,9 +201,14 @@ body {
   }
 }
 /* end preloader */
+
+/* display none */
 .none {
   display: none;
 }
+/* end display none */
+
+/* btn-up */
 .btn-up {
   position: fixed;
   display: none;
@@ -216,6 +221,9 @@ body {
   color: #fff;
   background: rgba(0, 0, 0, .4);
 }
+/* end btn-up */
+
+/* background-image */
 .bg-img {
   background-image: url("../img/30094.jpg");
   background-position: center;
@@ -237,8 +245,11 @@ body {
   height: 100%;
   z-index: -1;
 }
+/* end background-image */
+
+/* header */
 .header {
-  height: 100vh;
+ min-height: 100vh;
   margin-bottom: 100px;
 }
 
@@ -364,49 +375,9 @@ body {
   margin-right: 0;
 }
 /* burger */
-.menu-btn {
-  position: relative;
-  display: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -10px;
-  margin-top: -1px;
-  width: 20px;
-  height: 2px;
-  background: #222;
-}
-.menu-btn span::before,
-.menu-btn span::after {
-  content: "";
-  display: block;
-  transition: 0.1s;
-}
-.menu-btn span::before {
-  transform: translateY(-5px);
-}
-.menu-btn span::after {
-  transform: translateY(5px);
-}
-.menu-btn_active span::before {
-  transform: rotate(35deg);
-  transform-origin: left bottom;
-  width: 10px;
-}
-.menu-btn_active span::after {
-  transform: rotate(-35deg);
-  transform-origin: left top;
-  width: 10px;
-}
+
 /* burger */
+/* end header */
 
 /* about me */
 .about-me {
@@ -436,13 +407,11 @@ p {
 }
 .about-me p {
   font-size: 20px;
+  margin: 20px 0 20px 0;
 }
 .about-me p span {
   color: deepskyblue;
   font-family: "Source Sans Pro";
-}
-.about-me p {
-  margin: 20px 0 20px 0;
 }
 .awesome-icons a {
   font-size: 28px;
@@ -462,8 +431,9 @@ p {
 .awesome-icons a:last-child {
   margin-right: 0;
 }
-/* about me */
-/* scroll */
+/* end about me */
+
+/* scroll-image-centered */
 .scroll {
   width: 60px;
   margin-left: auto;
@@ -473,6 +443,9 @@ p {
 .scroll img {
   height: 60px;
   animation: scrollAnimate infinite 1.5s linear;
+}
+#forMobile {
+  display: none;
 }
 @keyframes scrollAnimate {
   0% {
@@ -485,12 +458,17 @@ p {
     transform: translateY(-10px);
   }
 }
-/* scroll */
+/* end scroll-image-centered */
 
 /* section skill */
 .section {
   width: 85%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  /* overflow: hidden; */
 }
 .skills {
   margin-bottom: 100px;
@@ -729,6 +707,85 @@ p {
 /* end btn-settings */
 /* end section documentation */
 
+/* section portfolio */
+.portfolio {
+  margin-bottom: 100px;
+}
+.portfolio-wrapp {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 10px;
+  padding: 40px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 10px 10px 0;
+}
+.portfolio-box:hover .portfolioBox__content button {
+  opacity: 1;
+}
+.portfolio-box:hover .portfolioBox__content .content-title {
+  opacity: 1;
+}
+.portfolio-box:hover .portfolioBox__content {
+  background: transparent;
+}
+.portfolio-box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.portfolioBox__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s;
+}
+.portfolioBox__content button {
+  transition: 0.2s;
+  padding: 10px 15px;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  opacity: 0;
+}
+.portfolioBox__content button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+}
+.portfolioBox__content button a {
+  transition: 0.2s;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Exo 2";
+}
+.portfolioBox__content button:hover a {
+  color: #000;
+}
+.portfolioBox__content .content-title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+  transition: 0.2s;
+  font-family: "Exo 2";
+}
+/* end section portfolio */
+
 /* section contacts */
 .contacts {
   margin-bottom: 100px;
@@ -850,94 +907,6 @@ p {
 /* end glitch effect */
 /* end section contacts */
 
-/* section portfolio */
-.portfolio {
-  margin-bottom: 100px;
-}
-.portfolio-wrapp {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.397);
-  border-radius: 10px;
-  padding: 40px 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.portfolio-box {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0 10px 10px 0;
-}
-.portfolio-box:hover .portfolioBox__content button {
-  opacity: 1;
-}
-.portfolio-box:hover .portfolioBox__content .content-title {
-  opacity: 1;
-}
-.portfolio-box:hover .portfolioBox__content {
-  background: transparent;
-}
-.portfolio-box img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-.portfolioBox__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  transition: 0.2s;
-}
-.portfolioBox__content button {
-  transition: 0.2s;
-  padding: 10px 15px;
-  background: transparent;
-  outline: none;
-  border: 1px solid white;
-  border-radius: 5px;
-  opacity: 0;
-}
-.portfolioBox__content button:hover {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid black;
-}
-.portfolioBox__content button a {
-  transition: 0.2s;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Exo 2";
-}
-.portfolioBox__content button:hover a {
-  color: #000;
-}
-.portfolioBox__content .content-title {
-  margin: 0;
-  text-transform: uppercase;
-  color: #fff;
-  opacity: 0;
-  transition: 0.2s;
-  font-family: "Exo 2";
-}
-/* end section portfolio */
-
-/* section contact-width-me */
-.contact-form-wrap {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.397);
-  border-radius: 10px;
-  padding: 40px 15px;
-}
-/* section contact-width-me */
-
 /* footer */
 .footer {
   margin-bottom: 10px;
@@ -970,4 +939,3 @@ p {
   margin-bottom: 5px;
 }
 /* end footer */
-
