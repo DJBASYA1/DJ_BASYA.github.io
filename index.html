@@ -1,11 +1,11 @@
-<!-- This web-Site in licence -->
+<!-- This page in licence -->
 <!-- Powered by DJ_BASYA -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,17 +16,18 @@
     <!-- fav-icon -->
     <link rel="shortcut icon" href="img/basya.ico" type="image/x-icon">
     <!-- end fav-icon -->
-    
+
     <!-- link styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- end link styles -->
 
     <!-- google fonts SourceSansPro & Exo2 -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- end google fonts SourceSansPro & Exo2 -->
-    
+
     <!-- font-awesome CDN -->
     <script src="https://kit.fontawesome.com/d6d6e5875a.js" crossorigin="anonymous"></script>
     <!-- end font-awesome CDN -->
@@ -37,14 +38,14 @@
     <!-- bg-img fixed -->
     <div class="bg-img"></div>
     <div class="smoke"></div>
-    <!-- emd bg-img fixed -->
-    
+    <!-- end bg-img fixed -->
+
     <!-- btn-to-top -->
     <div class="btn-up" id="toTop">
         <i class="fas fa-arrow-circle-up"></i>
     </div>
     <!-- end btn-to-top -->
-    
+
 
     <!-- preloader -->
     <div id="load">
@@ -56,11 +57,11 @@
         <div class="load-div">_</div>
         <div class="load-div">J</div>
         <div class="load-div">D</div>
-      </div>
+    </div>
     <!-- end preloader -->
 
     <!-- main content -->
-    <header class="header">
+    <header class="header ">
         <div class="wrapper">
             <nav class="navigation">
                 <div class="logo-padding wow slideInLeft" data-wow-duration="1s">
@@ -70,8 +71,8 @@
                     <a href="#skills" class="nav-links-unchor wow fadeInDown" data-wow-delay="1.5s">навыки</a>
                     <a href="#documentation" class="nav-links-unchor wow fadeInUp" data-wow-delay="2s">документация</a>
                     <a href="#portfolio" class="nav-links-unchor wow fadeInDown" data-wow-delay="2.5s">портфолио</a>
-                    <a href="#contacts" class="nav-links-unchor nav-text nav-middle wow fadeInUp" data-wow-delay="3s" data-text="контакты">контакты</a>
-                    <a href="#!" class="menu-btn"><span></span></a>
+                    <a href="#contacts" class="nav-links-unchor nav-text nav-middle wow fadeInUp" data-wow-delay="3s"
+                        data-text="контакты">контакты</a>
                 </div>
             </nav>
             <div class="about-me wow slideInDown" data-wow-delay="3.5s">
@@ -86,12 +87,13 @@
                 </div>
             </div>
             <div class="scroll wow flipInX" data-wow-delay="7s">
-                <img src="img/scroll.jpg" alt="scroll">
+                <img src="img/scroll.jpg" alt="scroll" id="forPc">
+                <i class="far fa-hand-point-down" id="forMobile"></i>
             </div>
         </div>
     </header>
 
-    <section class="section skills" id="skills">
+    <section class="section skills " id="skills">
         <h3 class="text-center wow slideInLeft">Мои навыки</h3>
         <div class="skillbar-wrap wow fadeInRight">
             <div class="skillbar" data-percent="85%">
@@ -127,41 +129,42 @@
         </div>
     </section>
 
-    <section class="section documentation" id="documentation">
+    <section class="section documentation " id="documentation">
         <h3 class="text-center wow slideInRight" data-wow-delay="1s">Документация</h3>
         <div class="documentation-wrap">
             <div class="documentation-short">
                 <div class="short-title">
-                    <h4>Краткое описание</h4>
+                    <h4 class="wow slideInDown">Краткое описание</h4>
                 </div>
-                <h3>Ф.И.О</h3>
-                <div class="border-top"></div>
-                <p>Халматов Руслан Газинурович</p>
-                <div class="border-bottom"></div>
-                <h3>Место учебы</h3>
-                <div class="border-top"></div>
-                <p>Московский финансово-промышленный<br> университет <span>Синергия</span></p>
-                <div class="border-bottom"></div>
-                <h3>Желаемое место работы</h3>
-                <div class="border-top"></div>
-                <p>Фронтэнд Веб Разработчик</p>
-                <div class="border-bottom"></div>
+                <h3 class="wow fadeInLeft" data-wow-delay="1s">Ф.И.О</h3>
+                <div class="border-top wow slideInLeft" data-wow-delay="2.5s"></div>
+                <p class="wow fadeInRight" data-wow-delay="2s">Халматов Руслан Газинурович</p>
+                <div class="border-bottom wow slideInLeft" data-wow-delay="2.5s"></div>
+                <h3 class="wow fadeInLeft" data-wow-delay="1s">Место учебы</h3>
+                <div class="border-top wow slideInLeft" data-wow-delay="2.5s"></div>
+                <p class="wow fadeInRight" data-wow-delay="2s">Московский финансово-промышленный<br> университет
+                    <span>Синергия</span></p>
+                <div class="border-bottom wow slideInLeft" data-wow-delay="2.5s"></div>
+                <h3 class="wow fadeInLeft" data-wow-delay="1s">Желаемое место работы</h3>
+                <div class="border-top wow slideInLeft" data-wow-delay="2.5s"></div>
+                <p class="wow fadeInRight" data-wow-delay="2s">Фронтэнд Веб Разработчик</p>
+                <div class="border-bottom wow slideInLeft" data-wow-delay="2.5s"></div>
             </div>
 
             <div class="separater"></div>
 
             <div class="documentation-download">
                 <div class="short-title">
-                    <h4>тут вы можете скачать моё резюме</h4>
-                    <div class="resume_btn">
-                        <button class="btn btn-1 btn-1f"><a href="download/resume.docx" download>скачать</a></button>
+                    <h4 class="wow slideInDown">тут вы можете скачать моё резюме</h4>
+                    <div class="resume_btn wow slideInRight" data-wow-delay="3s">
+                        <button class="btn btn-1 btn-1f"><a download href="download/resume.docx">скачать</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section portfolio" id="portfolio">
+    <section class="section portfolio " id="portfolio">
         <h3 class="text-center wow slideInLeft">Портфолио</h3>
         <div class="portfolio-wrapp wow fadeInRight" data-wow-delay="1s">
             <div class="portfolio-box wow fadeInUp" data-wow-delay="2s">
@@ -212,7 +215,7 @@
         </div>
     </section>
 
-    <section class="section contacts" id="contacts">
+    <section class="section contacts " id="contacts">
         <h3 class="text-center wow slideInLeft">Контакты</h3>
         <div class="contact-wrap wow slideInRight" data-wow-delay="1s">
             <div class="contacts-form wow slideInLeft" data-wow-delay="2s">
@@ -234,7 +237,8 @@
                     <span>адрес:</span>
                     <i class="fas fa-map-marked-alt"></i>
                 </div>
-                <p class="wow fadeInDown" data-wow-delay="3.5s">Ташкентская обл<br>Город:Нурафшон<br>Ул:Ахмат Яссовий<br>Дом:(№4)</p>
+                <p class="wow fadeInDown" data-wow-delay="3.5s">Ташкентская обл<br>Город:Нурафшон<br>Ул:Ахмат
+                    Яссовий<br>Дом:(№4)</p>
             </div>
             <div class="contacts-form wow slideInRight" data-wow-delay="2.5s">
                 <div class="contacts-form__bar wow fadeInUp" data-wow-delay="3.5s">
@@ -261,7 +265,7 @@
         </div>
     </footer>
     <!-- end main content -->
-    
+
     <!-- scripts -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="libs/wow.min.js"></script>
