@@ -1,0 +1,600 @@
+/* @media 768-992 px */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn-up {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .logo {
+    position: relative;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .nav-links {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  .nav-links .nav-links-unchor {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Exo 2";
+    position: relative;
+    transition: color 0.5s;
+    font-size: 14px;
+  }
+  .about-me {
+    width: 70%;
+    margin: 100px auto 0 auto;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .about-me h3 {
+    font-size: 24px;
+  }
+  .about-me p {
+    font-size: 20px;
+  }
+  .awesome-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: deepskyblue;
+    transition: 0.2s;
+  }
+  .scroll {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+  }
+  .text-center {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    color: #fff;
+    width: 200px;
+    font-family: "Source Sans Pro";
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .documentation-short .short-title h4 {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Exo 2";
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .documentation-download .short-title h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Exo 2";
+  }
+  .documentation-short h3 {
+    color: deepskyblue;
+    font-size: 20px;
+    font-family: "Exo 2";
+  }
+  .documentation-short p {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+  }
+  .separater {
+    height: 450px;
+    width: 4px;
+    background: deepskyblue;
+  }
+  .documentation-short .border-top {
+    width: 90%;
+    height: 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #fff;
+  }
+  .documentation-short .border-bottom {
+    width: 90%;
+    height: 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #fff;
+  }
+  .documentation-download .short-title .resume_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .btn-1f {
+    overflow: hidden;
+  }
+
+  .btn-1f:after {
+    width: 101%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: deepskyblue;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .btn {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    display: inline-block;
+    margin: 50px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .btn a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+  }
+  .btn:hover a {
+    color: #fff;
+  }
+  .btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  /* Pseudo elements for icons */
+  .btn:before,
+  .icon-heart:after,
+  .icon-star:after,
+  .icon-plus:after,
+  .icon-file:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .btn-1 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-family: "Exo 2";
+    color: #000;
+  }
+
+  .btn-1f:hover,
+  .btn-1f:active {
+    color: #fff;
+    border: 1px solid black;
+  }
+
+  .btn-1f:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+
+  .btn-1f:active:after {
+    height: 130%;
+    opacity: 1;
+  }
+  .portfolio-box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px 10px 0;
+  }
+  .portfolio-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .contacts-form {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    border-radius: 5px;
+    padding: 20px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .contacts-form p {
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+  }
+  .contacts-form p a {
+    position: relative;
+    font-size: 20px;
+    margin-right: 20px;
+    color: deepskyblue;
+  }
+  .contacts-form__bar span {
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .contacts-form__bar i {
+    text-align: center;
+    font-size: 20px;
+  }
+  .contacts-form:last-child span {
+    font-size: 24px;
+    color: deepskyblue;
+  }
+  .text::before,
+  .text::after {
+    content: attr(data-text);
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .footer-wrap p {
+    font-family: "Exo 2";
+    color: deepskyblue;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 16px;
+  }
+  .footer-socials span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* end @media 768-992 px */
+
+/*  @media 576-768 px */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo {
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .scroll img {
+    height: 60px;
+    animation: none;
+  }
+  .btn-up {
+    position: fixed;
+    display: none;
+    text-align: center;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #fff;
+    background: transparent;
+  }
+  .nav-links {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  .nav-links .nav-links-unchor {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Exo 2";
+    position: relative;
+    transition: color 0.5s;
+    font-size: 12px;
+  }
+  .about-me {
+    width: 70%;
+    margin: 100px auto 0 auto;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .about-me h3 {
+    font-size: 20px;
+  }
+  .about-me p {
+    font-size: 18px;
+  }
+  .awesome-icons a {
+    font-size: 22px;
+    margin-right: 10px;
+    color: deepskyblue;
+    transition: 0.2s;
+  }
+  .text-center {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    color: #fff;
+    width: 200px;
+    font-family: "Source Sans Pro";
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .documentation-short .short-title h4 {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Exo 2";
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .documentation-download .short-title h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Exo 2";
+  }
+  .documentation-short h3 {
+    color: deepskyblue;
+    font-size: 20px;
+    font-family: "Exo 2";
+  }
+  .documentation-short p {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+  }
+  .separater {
+    height: 450px;
+    width: 4px;
+    background: deepskyblue;
+  }
+  .documentation-short .border-top {
+    width: 90%;
+    height: 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #fff;
+  }
+  .documentation-short .border-bottom {
+    width: 90%;
+    height: 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #fff;
+  }
+  .documentation-download .short-title .resume_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .btn-1f {
+    overflow: hidden;
+  }
+
+  .btn-1f:after {
+    width: 101%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: deepskyblue;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .btn {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    display: inline-block;
+    margin: 50px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .btn a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+  }
+  .btn:hover a {
+    color: #fff;
+  }
+  .btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  /* Pseudo elements for icons */
+  .btn:before,
+  .icon-heart:after,
+  .icon-star:after,
+  .icon-plus:after,
+  .icon-file:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .btn-1 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-family: "Exo 2";
+    color: #000;
+  }
+
+  .btn-1f:hover,
+  .btn-1f:active {
+    color: #fff;
+    border: 1px solid black;
+  }
+
+  .btn-1f:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+
+  .btn-1f:active:after {
+    height: 130%;
+    opacity: 1;
+  }
+  .portfolio-wrapp {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    padding: 40px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .contacts-form {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    border-radius: 5px;
+    padding: 20px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .contacts-form p {
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+  }
+  .contacts-form p a {
+    position: relative;
+    font-size: 20px;
+    margin-right: 20px;
+    color: deepskyblue;
+  }
+  .contacts-form__bar span {
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .contacts-form__bar i {
+    text-align: center;
+    font-size: 20px;
+  }
+  .contacts-form:last-child span {
+    font-size: 24px;
+    color: deepskyblue;
+  }
+  .text::before,
+  .text::after {
+    content: attr(data-text);
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .footer-wrap p {
+    font-family: "Exo 2";
+    color: deepskyblue;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 12px;
+  }
+  .footer-socials span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/*  end @media 576-768 px */
+
+
+
