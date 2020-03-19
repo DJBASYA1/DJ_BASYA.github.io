@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  // preloader script
   $(window).on('load', function () {
     setTimeout(function() {
       $preloader = $('#load'),
@@ -7,9 +7,10 @@ $(document).ready(function() {
         $loader.fadeOut();
         $preloader.delay(350).fadeOut('slow');
     },2500)
-    
   });
+  // end preloader script
 
+  // smooth scroll and toTop button
   $('a[href^="#"').click(function(){
     var target = $(this).attr('href');
     $('html, body').animate({
@@ -29,12 +30,13 @@ $(document).ready(function() {
        scrollTop: 0
     }, 1000);
   });
+  // end smooth scroll and toTop button
+
+  // menu button
   
-  $('.menu-btn').on('click', function(e) {
-      e.preventDefault;
-      $(this).toggleClass('menu-btn_active');
-  });
-  
+  // end menu button
+
+  // skillBar script
   var target = $('.skillbar-wrap');
   var targetPos = target.offset().top;
   var winHeight = $(window).height();
@@ -49,6 +51,9 @@ $(document).ready(function() {
       })
     }
   });
-  
-  new WOW().init();
+  // end skillBar script
+
+  // WOW itinitialisation script
+  // new WOW().init();
+  // end WOW itinitialisation script
 });
