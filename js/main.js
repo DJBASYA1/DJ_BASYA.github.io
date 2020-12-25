@@ -54,6 +54,6 @@ $(document).ready(function() {
   // end skillBar script
 
   // WOW itinitialisation script
-  // new WOW().init();
-  // end WOW itinitialisation script
+  new WOW().init();
+  end WOW itinitialisation script
 });
