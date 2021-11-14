@@ -55,5 +55,5 @@ $(document).ready(function() {
 
   // WOW itinitialisation script
   new WOW().init();
-  end WOW itinitialisation script
+  end WOW itinitialisation script;
 });
