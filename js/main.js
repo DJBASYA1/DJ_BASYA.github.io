@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
   // end smooth scroll and toTop button
 
-  // menu button
+  // menu button a
   
   // end menu button
 
